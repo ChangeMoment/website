@@ -1,11 +1,11 @@
 :root {
-  --color-primary: #dba979;
-  --color-secondary: #ecca9c;
-  --color-bg-green: #e8efcf;
-  --color-accent-green: #afd198;
+  --color-primary: #ccd5ae;
+  --color-secondary: #faedcd;
+  --color-bg-green: #e9edc9;
+  --color-accent-green: #ccd5ae;
   --color-ink: #2f2a24;
   --color-muted: #655f55;
-  --color-surface: #fffaf3;
+  --color-surface: #fefae0;
   --color-white: #ffffff;
 }
 
@@ -16,8 +16,8 @@ html {
 body {
   color: var(--color-ink);
   background:
-    radial-gradient(circle at top left, rgba(175, 209, 152, 0.26), transparent 34rem),
-    linear-gradient(180deg, #fffdf8 0%, #f7f3ea 46%, var(--color-bg-green) 100%);
+    radial-gradient(circle at top left, rgba(204, 213, 174, 0.34), transparent 34rem),
+    linear-gradient(180deg, #fefcf0 0%, #fbf4dc 46%, var(--color-bg-green) 100%);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
 }
@@ -99,7 +99,7 @@ select:focus-visible {
 
 .mobile-link:hover,
 .mobile-link[aria-current="page"] {
-  background: rgba(219, 169, 121, 0.18);
+  background: rgba(204, 213, 174, 0.34);
   color: #6d4320;
 }
 
@@ -130,13 +130,13 @@ select:focus-visible {
 }
 
 .btn-secondary:hover {
-  background: #fffaf3;
+  background: #fefae0;
   border-color: rgba(129, 86, 48, 0.42);
   transform: translateY(-1px);
 }
 
 .card {
-  background: rgba(255, 250, 243, 0.9);
+  background: rgba(254, 250, 224, 0.9);
   border: 1px solid rgba(129, 86, 48, 0.14);
   border-radius: 0.5rem;
   box-shadow: 0 18px 50px rgba(47, 42, 36, 0.07);
@@ -144,7 +144,7 @@ select:focus-visible {
 
 .soft-card {
   background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(175, 209, 152, 0.46);
+  border: 1px solid rgba(204, 213, 174, 0.62);
   border-radius: 0.5rem;
 }
 
@@ -155,24 +155,24 @@ select:focus-visible {
 
 .hero-panel {
   background:
-    linear-gradient(140deg, rgba(232, 239, 207, 0.86), rgba(255, 250, 243, 0.92)),
+    linear-gradient(140deg, rgba(233, 237, 201, 0.88), rgba(254, 250, 224, 0.94)),
     var(--color-surface);
 }
 
 .inner-hero {
   background:
-    linear-gradient(120deg, rgba(232, 239, 207, 0.92), rgba(236, 202, 156, 0.42)),
-    #fffaf3;
+    linear-gradient(120deg, rgba(233, 237, 201, 0.94), rgba(250, 237, 205, 0.62)),
+    #fefae0;
   border-bottom: 1px solid rgba(129, 86, 48, 0.12);
 }
 
 .section-band {
-  background: rgba(255, 250, 243, 0.72);
+  background: rgba(254, 250, 224, 0.74);
   border-block: 1px solid rgba(129, 86, 48, 0.1);
 }
 
 .tag {
-  background: rgba(175, 209, 152, 0.35);
+  background: rgba(204, 213, 174, 0.42);
   border: 1px solid rgba(99, 127, 80, 0.18);
   border-radius: 999px;
   color: #465f36;
@@ -193,13 +193,13 @@ select:focus-visible {
 
 .form-field:focus {
   border-color: #815630;
-  box-shadow: 0 0 0 4px rgba(219, 169, 121, 0.24);
+  box-shadow: 0 0 0 4px rgba(204, 213, 174, 0.42);
   outline: none;
 }
 
 .map-placeholder {
   background:
-    linear-gradient(135deg, rgba(175, 209, 152, 0.45), rgba(236, 202, 156, 0.35)),
+    linear-gradient(135deg, rgba(204, 213, 174, 0.52), rgba(250, 237, 205, 0.48)),
     repeating-linear-gradient(45deg, rgba(47, 42, 36, 0.06) 0, rgba(47, 42, 36, 0.06) 1px, transparent 1px, transparent 18px);
 }
 
