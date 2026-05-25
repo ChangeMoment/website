@@ -11,10 +11,10 @@
   --color-mist: #f5fbfc;
   --color-offwhite: #fbfdfb;
   --color-white: #ffffff;
-  --color-sage: #e6f1e8;
-  --color-lilac: #eeeaf7;
-  --color-blush: #f7eceb;
-  --color-butter: #f7f1d9;
+  --color-ice: #eef8fb;
+  --color-cloud: #f8fcfd;
+  --color-teal-wash: #e7f4f5;
+  --color-blue-wash: #f2f9fc;
   --shadow-soft: 0 20px 60px rgba(21, 63, 70, 0.09);
 }
 
@@ -480,20 +480,20 @@ select:focus-visible {
   background: var(--color-sky-soft);
 }
 
-.service-card-sage {
-  background: var(--color-sage);
+.service-card-mist {
+  background: linear-gradient(135deg, var(--color-mist) 0%, var(--color-ice) 100%);
 }
 
-.service-card-lilac {
-  background: var(--color-lilac);
+.service-card-ice {
+  background: var(--color-blue-wash);
 }
 
-.service-card-blush {
-  background: var(--color-blush);
+.service-card-teal {
+  background: linear-gradient(135deg, var(--color-teal-wash) 0%, var(--color-cloud) 100%);
 }
 
-.service-card-butter {
-  background: var(--color-butter);
+.service-card-cloud {
+  background: linear-gradient(135deg, var(--color-cloud) 0%, var(--color-sky-soft) 100%);
 }
 
 .service-card-white {
