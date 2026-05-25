@@ -232,10 +232,12 @@ select:focus-visible {
   align-items: center;
   border-radius: 0.5rem;
   display: inline-flex;
-  font-weight: 800;
+  font-weight: 600;
   justify-content: center;
+  letter-spacing: 0.025em;
+  line-height: 1.15;
   min-height: 2.9rem;
-  padding: 0.78rem 1.15rem;
+  padding: 0.78rem 1.25rem;
 }
 
 .btn-primary {
