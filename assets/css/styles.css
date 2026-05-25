@@ -292,6 +292,44 @@ select:focus-visible {
   background: var(--color-white);
 }
 
+.home-gradient-a {
+  background: linear-gradient(180deg, var(--color-offwhite) 0%, var(--color-mist) 100%);
+}
+
+.home-gradient-b {
+  background: linear-gradient(180deg, var(--color-mist) 0%, var(--color-white) 100%);
+}
+
+.home-gradient-c {
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-sky-soft) 100%);
+}
+
+.home-gradient-d {
+  background: linear-gradient(180deg, var(--color-sky-soft) 0%, var(--color-mist) 100%);
+}
+
+.home-gradient-e {
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-mist) 100%);
+}
+
+.home-gradient-f {
+  background: linear-gradient(180deg, var(--color-mist) 0%, var(--color-sky-soft) 100%);
+}
+
+.home-gradient-cta {
+  background: linear-gradient(180deg, var(--color-sky-soft) 0%, var(--color-white) 100%);
+}
+
+.home-gradient-a,
+.home-gradient-b,
+.home-gradient-c,
+.home-gradient-d,
+.home-gradient-e,
+.home-gradient-f,
+.home-gradient-cta {
+  border-block: 0;
+}
+
 @keyframes heroSlowZoomIn {
   from {
     transform: scale(1);
