@@ -11,93 +11,107 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Reusable Header -->
-  <header class="sticky top-0 z-50 border-b border-[rgba(129,86,48,0.12)] bg-[#FEFAE0]/95 backdrop-blur">
-    <div class="container-shell flex min-h-20 items-center justify-between gap-4">
+  <header class="site-header fixed top-0 z-50 w-full">
+    <div class="container-shell flex min-h-20 items-center justify-between gap-6">
       <a href="index.html" class="flex items-center gap-3" aria-label="Change Moment home">
-        <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#CCD5AE] font-display text-xl font-bold text-[#2f2a24]">CM</span>
+        <span class="logo-mark">CM</span>
         <span>
-          <span class="block font-display text-xl font-bold leading-tight text-[#2f2a24]">Change Moment</span>
-          <span class="block text-xs font-semibold text-[#655f55]">Psychotherapy &amp; Counselling</span>
+          <span class="brand-name">Change Moment</span>
+          <span class="brand-tagline">You Deserve Care.</span>
         </span>
       </a>
-      <nav class="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Primary navigation">
         <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="services.html">Services</a>
+        <div class="nav-dropdown" data-dropdown>
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" data-dropdown-toggle>
+            Services <span aria-hidden="true">v</span>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a class="dropdown-link" href="services.html">All Services</a>
+            <a class="dropdown-link" href="services.html#individual">Individual Therapy</a>
+            <a class="dropdown-link" href="services.html#couples">Couples Therapy</a>
+            <a class="dropdown-link" href="services.html#family">Family Therapy</a>
+          </div>
+        </div>
         <a class="nav-link" href="team.html">Team</a>
         <a class="nav-link" href="blogs.html">Blogs</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
       <div class="hidden md:block">
-        <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+        <a class="btn btn-primary" href="contact.html">Free Consultation</a>
       </div>
       <button class="btn btn-secondary !w-auto md:hidden" type="button" aria-label="Open navigation menu" aria-expanded="false" data-menu-button>
         Menu
       </button>
     </div>
-    <nav class="container-shell hidden pb-4 md:hidden" aria-label="Mobile navigation" data-mobile-menu>
+    <nav class="container-shell hidden border-t border-[rgba(207,226,231,0.82)] pb-4 pt-3 md:hidden" aria-label="Mobile navigation" data-mobile-menu>
       <a class="mobile-link" href="about.html">About</a>
-      <a class="mobile-link" href="services.html">Services</a>
+      <button class="mobile-services-toggle" type="button" aria-expanded="false" data-mobile-services-toggle>
+        Services <span aria-hidden="true">v</span>
+      </button>
+      <div class="mobile-services-panel" data-mobile-services-panel>
+        <a class="mobile-link" href="services.html">All Services</a>
+        <a class="mobile-link" href="services.html#individual">Individual Therapy</a>
+        <a class="mobile-link" href="services.html#couples">Couples Therapy</a>
+        <a class="mobile-link" href="services.html#family">Family Therapy</a>
+      </div>
       <a class="mobile-link" href="team.html">Team</a>
       <a class="mobile-link" href="blogs.html">Blogs</a>
       <a class="mobile-link" href="contact.html">Contact</a>
-      <a class="mobile-link" href="contact.html">Book a Consultation</a>
+      <a class="mobile-link" href="contact.html">Free Consultation</a>
     </nav>
   </header>
 
   <main id="main-content">
-    <!-- Home Hero -->
     <section class="hero-panel">
-      <div class="container-shell grid items-center gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
-        <div>
+      <div class="container-shell grid items-center gap-12 py-16 lg:grid-cols-[1.02fr_0.98fr] lg:py-24">
+        <div class="hero-copy">
+          <span class="quarter-motif" aria-hidden="true"></span>
           <p class="eyebrow">Compassionate therapy for meaningful change</p>
-          <h1 class="mt-4 max-w-3xl text-4xl font-bold leading-tight text-[#2f2a24] md:text-6xl">A steadier place to understand yourself and move forward.</h1>
-          <p class="mt-6 max-w-2xl text-lg text-[#51483f]">Change Moment provides thoughtful psychotherapy for people navigating anxiety, relationship strain, grief, burnout, identity questions, and life transitions.</p>
+          <h1 class="mt-5 max-w-3xl text-4xl font-bold leading-tight md:text-6xl">Change Moment Counselling</h1>
+          <p class="mt-6 max-w-2xl text-lg text-muted">A calm, professional space for people navigating anxiety, relationships, grief, burnout, identity questions, and life transitions.</p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
-            <a class="btn btn-secondary" href="services.html">Explore Services</a>
+            <a class="btn btn-primary" href="contact.html">Free Consultation</a>
+            <a class="btn btn-pale" href="services.html">Explore Services</a>
           </div>
-          <p class="mt-5 text-sm text-[#655f55]">This website is not monitored for emergencies. If you are in immediate danger, call local emergency services.</p>
+          <p class="mt-5 text-sm text-muted">This website is not monitored for emergencies. If you are in immediate danger, call local emergency services.</p>
         </div>
-        <div class="card overflow-hidden">
-          <img class="image-cover h-[420px]" src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Comfortable therapy room with warm seating and natural light">
+        <div class="hero-image-frame">
+          <img class="arch-image" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Two counsellors seated together in a calm collaborative conversation">
         </div>
       </div>
     </section>
 
-    <!-- Trust Strip -->
-    <section class="bg-[#FEFAE0] py-6">
+    <section class="section-white py-6">
       <div class="container-shell grid gap-4 text-center sm:grid-cols-3">
         <div class="soft-card p-4">
-          <p class="font-bold text-[#2f2a24]">Registered professionals</p>
-          <p class="text-sm text-[#655f55]">Care guided by ethics and ongoing training.</p>
+          <p class="font-bold">Registered professionals</p>
+          <p class="text-sm text-muted">Care guided by ethics and ongoing training.</p>
         </div>
         <div class="soft-card p-4">
-          <p class="font-bold text-[#2f2a24]">In-person and online</p>
-          <p class="text-sm text-[#655f55]">Flexible appointments for different needs.</p>
+          <p class="font-bold">In-person and online</p>
+          <p class="text-sm text-muted">Flexible appointments for different needs.</p>
         </div>
         <div class="soft-card p-4">
-          <p class="font-bold text-[#2f2a24]">Trauma-informed approach</p>
-          <p class="text-sm text-[#655f55]">Collaborative, paced, and respectful care.</p>
+          <p class="font-bold">Trauma-informed approach</p>
+          <p class="text-sm text-muted">Collaborative, paced, and respectful care.</p>
         </div>
       </div>
     </section>
 
-    <!-- Welcome Section -->
     <section class="section-padding">
       <div class="container-shell grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
         <div>
           <p class="eyebrow">Welcome</p>
           <h2 class="mt-3 text-3xl font-bold md:text-4xl">Therapy that feels human, grounded, and practical.</h2>
         </div>
-        <div class="space-y-5 text-lg text-[#51483f]">
+        <div class="space-y-5 text-lg text-muted">
           <p>At Change Moment, therapy begins with careful listening. We help clients make sense of patterns, build emotional capacity, and choose next steps that fit real life.</p>
-          <p>Our work is supportive and collaborative. We do not promise quick fixes, but we do offer a steady space to explore what hurts, what matters, and what may be possible.</p>
+          <p>Our work is supportive and collaborative. We do not promise quick fixes, but we offer a steady place to explore what hurts, what matters, and what may be possible.</p>
         </div>
       </div>
     </section>
 
-    <!-- Services Overview -->
     <section class="section-band section-padding">
       <div class="container-shell">
         <div class="max-w-2xl">
@@ -105,34 +119,36 @@
           <h2 class="mt-3 text-3xl font-bold md:text-4xl">Support for different chapters of life.</h2>
         </div>
         <div class="mt-10 grid gap-5 md:grid-cols-3">
-          <article class="card p-6">
-            <h3 class="text-xl font-bold">Individual Therapy</h3>
-            <p class="mt-3 text-[#655f55]">One-to-one support for anxiety, self-understanding, grief, stress, and personal growth.</p>
-            <a class="mt-5 inline-block font-bold text-[#6d4320]" href="services.html">Learn more</a>
+          <article class="service-card service-card-blue p-6">
+            <p class="eyebrow">One-to-one care</p>
+            <h3 class="mt-3 text-xl font-bold">Individual Therapy</h3>
+            <p class="mt-3 text-muted">Support for anxiety, self-understanding, grief, stress, and personal growth.</p>
+            <a class="btn btn-secondary mt-5" href="services.html#individual">Read More</a>
           </article>
-          <article class="card p-6">
-            <h3 class="text-xl font-bold">Couples Therapy</h3>
-            <p class="mt-3 text-[#655f55]">A structured place to improve communication, repair trust, and understand relationship cycles.</p>
-            <a class="mt-5 inline-block font-bold text-[#6d4320]" href="services.html">Learn more</a>
+          <article class="service-card service-card-sage p-6">
+            <p class="eyebrow">Relationship support</p>
+            <h3 class="mt-3 text-xl font-bold">Couples Therapy</h3>
+            <p class="mt-3 text-muted">A structured place to improve communication, repair trust, and understand cycles.</p>
+            <a class="btn btn-secondary mt-5" href="services.html#couples">Read More</a>
           </article>
-          <article class="card p-6">
-            <h3 class="text-xl font-bold">Family Therapy</h3>
-            <p class="mt-3 text-[#655f55]">Collaborative sessions that support family communication, transitions, and shared problem solving.</p>
-            <a class="mt-5 inline-block font-bold text-[#6d4320]" href="services.html">Learn more</a>
+          <article class="service-card service-card-lilac p-6">
+            <p class="eyebrow">Shared change</p>
+            <h3 class="mt-3 text-xl font-bold">Family Therapy</h3>
+            <p class="mt-3 text-muted">Collaborative sessions for communication, transitions, and shared problem solving.</p>
+            <a class="btn btn-secondary mt-5" href="services.html#family">Read More</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Who We Help -->
     <section class="section-padding">
       <div class="container-shell grid gap-8 lg:grid-cols-2">
         <div>
           <p class="eyebrow">Who we help</p>
           <h2 class="mt-3 text-3xl font-bold md:text-4xl">For people seeking room to breathe and think clearly.</h2>
-          <p class="mt-5 text-lg text-[#51483f]">Clients often come to us when their usual ways of coping no longer feel enough. Therapy can help create space for reflection, choice, and support.</p>
+          <p class="mt-5 text-lg text-muted">Clients often come to us when their usual ways of coping no longer feel enough. Therapy can help create space for reflection, choice, and support.</p>
         </div>
-        <div class="grid gap-3 sm:grid-cols-2">
+        <div class="callout-box grid gap-3 p-6 sm:grid-cols-2">
           <span class="tag">Anxiety and worry</span>
           <span class="tag">Relationship stress</span>
           <span class="tag">Burnout and overwhelm</span>
@@ -143,22 +159,18 @@
       </div>
     </section>
 
-    <!-- Approach Summary -->
-    <section class="bg-[#E9EDC9] section-padding">
+    <section class="section-white section-padding">
       <div class="container-shell grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
-        <div class="card overflow-hidden">
-          <img class="image-cover h-[360px]" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="People sitting together in a calm collaborative conversation">
-        </div>
+        <img class="image-cover image-soft h-[360px]" src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Comfortable therapy room with soft seating and natural light">
         <div>
           <p class="eyebrow">Our approach</p>
           <h2 class="mt-3 text-3xl font-bold md:text-4xl">Warm, evidence-informed, and paced with care.</h2>
-          <p class="mt-5 text-lg text-[#51483f]">Our therapists draw from relational, attachment-informed, cognitive, mindfulness-based, and trauma-informed practices. Your therapist will collaborate with you to shape the work around your goals and preferences.</p>
+          <p class="mt-5 text-lg text-muted">Our therapists draw from relational, attachment-informed, cognitive, mindfulness-based, and trauma-informed practices. Your therapist will collaborate with you to shape the work around your goals and preferences.</p>
           <a class="btn btn-primary mt-7" href="about.html">About Our Philosophy</a>
         </div>
       </div>
     </section>
 
-    <!-- Featured Team -->
     <section class="section-padding">
       <div class="container-shell">
         <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
@@ -166,38 +178,37 @@
             <p class="eyebrow">Meet the team</p>
             <h2 class="mt-3 text-3xl font-bold md:text-4xl">Thoughtful clinicians, steady care.</h2>
           </div>
-          <a class="font-bold text-[#6d4320]" href="team.html">View all team members</a>
+          <a class="text-link" href="team.html">View all team members</a>
         </div>
         <div class="mt-10 grid gap-5 md:grid-cols-3">
           <article class="card overflow-hidden">
             <img class="image-cover h-64" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Portrait of Maya Hart, registered psychotherapist">
             <div class="p-6">
               <h3 class="text-xl font-bold">Maya Hart</h3>
-              <p class="font-semibold text-[#655f55]">Registered Psychotherapist</p>
-              <p class="mt-3 text-[#655f55]">Supports adults with anxiety, self-worth, burnout, and major transitions.</p>
+              <p class="font-semibold text-muted">Registered Psychotherapist</p>
+              <p class="mt-3 text-muted">Supports adults with anxiety, self-worth, burnout, and major transitions.</p>
             </div>
           </article>
           <article class="card overflow-hidden">
             <img class="image-cover h-64" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Portrait of Elena Brooks, couples therapist">
             <div class="p-6">
               <h3 class="text-xl font-bold">Elena Brooks</h3>
-              <p class="font-semibold text-[#655f55]">Couples & Family Therapist</p>
-              <p class="mt-3 text-[#655f55]">Works with couples, families, communication, trust, and transitions.</p>
+              <p class="font-semibold text-muted">Couples &amp; Family Therapist</p>
+              <p class="mt-3 text-muted">Works with couples, families, communication, trust, and transitions.</p>
             </div>
           </article>
           <article class="card overflow-hidden">
             <img class="image-cover h-64" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Portrait of Julian Reyes, trauma-informed therapist">
             <div class="p-6">
               <h3 class="text-xl font-bold">Julian Reyes</h3>
-              <p class="font-semibold text-[#655f55]">Trauma-Informed Therapist</p>
-              <p class="mt-3 text-[#655f55]">Offers paced support for stress, trauma impacts, grief, and resilience.</p>
+              <p class="font-semibold text-muted">Trauma-Informed Therapist</p>
+              <p class="mt-3 text-muted">Offers paced support for stress, trauma impacts, grief, and resilience.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Blog Preview -->
     <section class="section-band section-padding">
       <div class="container-shell">
         <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
@@ -205,49 +216,56 @@
             <p class="eyebrow">Latest reflections</p>
             <h2 class="mt-3 text-3xl font-bold md:text-4xl">Notes on care, relationships, and change.</h2>
           </div>
-          <a class="font-bold text-[#6d4320]" href="blogs.html">Read the blog</a>
+          <a class="text-link" href="blogs.html">Read the blog</a>
         </div>
         <div class="mt-10 grid gap-5 md:grid-cols-3">
           <article class="card p-6">
-            <p class="text-sm font-bold text-[#6d4320]">Stress &middot; May 12, 2026</p>
+            <p class="text-sm font-bold text-link">Stress | May 12, 2026</p>
             <h3 class="mt-3 text-xl font-bold">How to notice when stress has become your baseline</h3>
-            <p class="mt-3 text-[#655f55]">Gentle signs that your nervous system may need more support and recovery.</p>
+            <p class="mt-3 text-muted">Gentle signs that your nervous system may need more support and recovery.</p>
           </article>
           <article class="card p-6">
-            <p class="text-sm font-bold text-[#6d4320]">Relationships &middot; Apr 28, 2026</p>
+            <p class="text-sm font-bold text-link">Relationships | Apr 28, 2026</p>
             <h3 class="mt-3 text-xl font-bold">What repair can look like after a hard conversation</h3>
-            <p class="mt-3 text-[#655f55]">Small, practical ways people can reconnect after conflict.</p>
+            <p class="mt-3 text-muted">Small, practical ways people can reconnect after conflict.</p>
           </article>
           <article class="card p-6">
-            <p class="text-sm font-bold text-[#6d4320]">Transitions &middot; Apr 03, 2026</p>
+            <p class="text-sm font-bold text-link">Transitions | Apr 03, 2026</p>
             <h3 class="mt-3 text-xl font-bold">Making space for mixed feelings during change</h3>
-            <p class="mt-3 text-[#655f55]">Why ambivalence can be part of meaningful growth.</p>
+            <p class="mt-3 text-muted">Why ambivalence can be part of meaningful growth.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Reusable CTA Section -->
     <section class="section-padding">
-      <div class="container-shell card bg-[#FEFAE0] p-8 text-center md:p-12">
+      <div class="container-shell callout-box p-8 text-center md:p-12">
         <p class="eyebrow">Begin gently</p>
-        <h2 class="mt-3 text-3xl font-bold md:text-4xl">A first conversation can help you decide what support fits.</h2>
-        <p class="mx-auto mt-4 max-w-2xl text-[#655f55]">Reach out for a consultation and we will respond with next steps, availability, and answers to practical questions.</p>
-        <a class="btn btn-primary mt-7" href="contact.html">Book a Consultation</a>
+        <h2 class="mx-auto mt-3 max-w-3xl text-3xl font-bold md:text-4xl">A first conversation can help you decide what support fits.</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-muted">Reach out for a consultation and we will respond with next steps, availability, and answers to practical questions.</p>
+        <a class="btn btn-primary mt-7" href="contact.html">Free Consultation</a>
       </div>
     </section>
   </main>
 
-  <!-- Reusable Footer -->
-  <footer class="bg-[#2f2a24] py-12 text-[#FEFAE0]">
-    <div class="container-shell grid gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
+  <footer class="site-footer py-12">
+    <div class="container-shell grid gap-8 md:grid-cols-[1.15fr_0.9fr_0.9fr_1fr]">
       <div>
-        <h2 class="font-display text-2xl font-bold">Change Moment</h2>
-        <p class="mt-3 text-sm text-[#e8dfd2]">Warm, professional psychotherapy and counselling for individuals, couples, and families.</p>
+        <div class="flex items-center gap-3">
+          <span class="logo-mark">CM</span>
+          <span>
+            <span class="brand-name">Change Moment</span>
+            <span class="brand-tagline">You Deserve Care.</span>
+          </span>
+        </div>
+        <p class="mt-4 text-sm">Warm, professional psychotherapy and counselling for individuals, couples, and families.</p>
       </div>
       <div>
-        <h3 class="font-bold">Contact</h3>
-        <address class="mt-3 space-y-1 text-sm not-italic text-[#e8dfd2]">
+        <div class="flex items-center gap-3">
+          <span class="footer-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6.5 12 12l8-5.5"/><path d="M4 6.5h16v11H4z"/></svg></span>
+          <h3 class="font-bold">Contact</h3>
+        </div>
+        <address class="mt-4 space-y-1 text-sm not-italic">
           <p>123 Willow Street</p>
           <p>Vancouver, BC</p>
           <p><a href="tel:+16045550198">604-555-0198</a></p>
@@ -255,25 +273,31 @@
         </address>
       </div>
       <div>
-        <h3 class="font-bold">Quick links</h3>
-        <ul class="mt-3 space-y-2 text-sm text-[#e8dfd2]">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="flex items-center gap-3">
+          <span class="footer-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg></span>
+          <h3 class="font-bold">Office Hours</h3>
+        </div>
+        <dl class="mt-4 space-y-1 text-sm">
+          <div><dt>Mon to Thu</dt><dd>9:00 AM - 6:00 PM</dd></div>
+          <div><dt>Friday</dt><dd>9:00 AM - 3:00 PM</dd></div>
+          <div><dt>Saturday</dt><dd>By appointment</dd></div>
+        </dl>
       </div>
       <div>
-        <h3 class="font-bold">Important note</h3>
-        <p class="mt-3 text-sm text-[#e8dfd2]">This website is for general information and is not a substitute for therapy, diagnosis, or emergency care. If you are in crisis or immediate danger, call emergency services or a local crisis line.</p>
-        <div class="mt-4 flex gap-4 text-sm font-bold">
-          <a href="https://www.linkedin.com" aria-label="Change Moment on LinkedIn">LinkedIn</a>
-          <a href="https://www.instagram.com" aria-label="Change Moment on Instagram">Instagram</a>
+        <div class="flex items-center gap-3">
+          <span class="footer-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v16H7z"/><path d="M9.5 8h5M9.5 12h5M9.5 16h3"/></svg></span>
+          <h3 class="font-bold">Services</h3>
         </div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="services.html#individual">Individual Therapy</a></li>
+          <li><a href="services.html#couples">Couples Therapy</a></li>
+          <li><a href="services.html#family">Family Therapy</a></li>
+          <li><a href="services.html#trauma">Trauma-Informed Therapy</a></li>
+        </ul>
       </div>
     </div>
-    <div class="container-shell mt-8 border-t border-white/15 pt-6 text-sm text-[#e8dfd2]">
-      <p>&copy; 2026 Change Moment. Privacy and confidentiality practices vary by jurisdiction and service arrangement.</p>
+    <div class="container-shell mt-8 border-t border-white/15 pt-6 text-sm">
+      <p>&copy; 2026 Change Moment. Design credit: Change Moment Studio.</p>
     </div>
   </footer>
 
