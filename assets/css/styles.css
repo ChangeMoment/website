@@ -84,6 +84,10 @@ select:focus-visible {
   padding-block: clamp(3.5rem, 7vw, 6rem);
 }
 
+.section-compact {
+  padding-block: clamp(1.75rem, 4vw, 2.75rem);
+}
+
 .site-header {
   background: rgba(251, 253, 251, 0.94);
   border-bottom: 1px solid rgba(207, 226, 231, 0.86);
@@ -279,17 +283,72 @@ select:focus-visible {
   border-block: 1px solid rgba(207, 226, 231, 0.74);
 }
 
+.section-soft {
+  background: var(--color-mist);
+}
+
 .section-white {
   background: var(--color-white);
 }
 
+@keyframes heroSlowZoomOut {
+  from {
+    transform: scale(1.08);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 .hero-panel {
   background: var(--color-offwhite);
+  overflow: hidden;
   position: relative;
+}
+
+.hero-full {
+  align-items: center;
+  display: flex;
+  isolation: isolate;
+  min-height: calc(100svh - 5.5rem);
+}
+
+.hero-full-media {
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+.hero-full-image {
+  animation: heroSlowZoomOut 7.5s ease-out both;
+  display: block;
+  filter: saturate(0.82) contrast(0.96) brightness(1.05);
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  opacity: 0.95;
+  transform-origin: center;
+  width: 100%;
+}
+
+.hero-full-content {
+  margin-inline: 0;
+  padding-block: clamp(4.5rem, 9vw, 7rem);
+  padding-left: clamp(4.5rem, 18vw, 18rem);
+  padding-right: 1rem;
+  position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
 .hero-copy {
   position: relative;
+}
+
+.hero-copy-panel {
+  max-width: min(38rem, 42%);
 }
 
 .quarter-motif {
@@ -356,6 +415,11 @@ select:focus-visible {
 
 .callout-box {
   box-shadow: var(--shadow-soft);
+}
+
+.section-kicker {
+  background: rgba(255, 255, 255, 0.72);
+  border-block: 1px solid rgba(207, 226, 231, 0.62);
 }
 
 .service-card {
@@ -514,6 +578,22 @@ select:focus-visible {
     padding-top: 4.85rem;
   }
 
+  .hero-full {
+    min-height: calc(100svh - 4.85rem);
+  }
+
+  .hero-full-content {
+    padding-block: 4rem;
+  }
+
+  .hero-full-image {
+    object-position: 62% center;
+  }
+
+  .hero-copy-panel {
+    max-width: 100%;
+  }
+
   .container-shell {
     width: min(100% - 1.25rem, 1120px);
   }
@@ -528,5 +608,12 @@ select:focus-visible {
 
   .brand-tagline {
     font-size: 0.72rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-full-image {
+    animation: none;
+    transform: none;
   }
 }
