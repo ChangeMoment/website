@@ -14,3 +14,8 @@ The content of the hero section should be placed on the left side of the screen,
 This will ensure that the text is easy to read and stands out against the softer background.
 
 The non-hero sections use very light gradient backgrounds that blend smoothly from one section to the next, instead of abrupt white/pale-blue bands.
+
+# Menu
+the dropdown indicator looks intentional and polished in both desktop and mobile navigation.
+
+the dropdown menu items behave as a true toggle: if closed, it opens; if open, it closes.

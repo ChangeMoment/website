@@ -150,6 +150,26 @@ select:focus-visible {
   color: var(--color-teal);
 }
 
+.nav-chevron {
+  border-color: currentColor;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  height: 0.42rem;
+  margin-left: 0.05rem;
+  margin-top: -0.18rem;
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: transform 180ms ease, margin-top 180ms ease;
+  width: 0.42rem;
+}
+
+.nav-dropdown[data-open="true"] .nav-chevron,
+.mobile-services-toggle[aria-expanded="true"] .nav-chevron {
+  margin-top: 0.1rem;
+  transform: rotate(225deg);
+}
+
 .nav-dropdown {
   position: relative;
 }
@@ -169,8 +189,7 @@ select:focus-visible {
   z-index: 60;
 }
 
-.nav-dropdown[data-open="true"] .nav-dropdown-menu,
-.nav-dropdown:focus-within .nav-dropdown-menu {
+.nav-dropdown[data-open="true"] .nav-dropdown-menu {
   display: grid;
   gap: 0.25rem;
 }
