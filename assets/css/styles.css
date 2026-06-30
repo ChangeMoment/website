@@ -418,6 +418,20 @@ select:focus-visible {
   max-width: min(38rem, 42%);
 }
 
+.hero-copy-panel h1,
+.hero-copy-panel .eyebrow {
+  color: var(--color-teal-deep);
+}
+
+.hero-copy-panel .eyebrow {
+  font-weight: 900;
+}
+
+.hero-copy-panel .text-muted {
+  color: #294f53;
+  font-weight: 500;
+}
+
 .hero-copy > * {
   position: relative;
   z-index: 1;
